@@ -1,4 +1,5 @@
 <!-- GOAL: Creare una variabile con un paragrafo di testo. Visualizzare a schermo il paragrafo con la relative lunghezza e sostituire la badword passata in GET con tre *. -->
+
 <p>
 
 
@@ -6,15 +7,24 @@
   <?php
 
 
-  $testo =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    $testo = "Io sono il sergente maggiore Hartman, vostro capo istruttore, da questo momento potete parlare soltanto quando vi sarà richiesto e la prima e l ultima parola che dovrà uscire dalle vostre fogne sarà signore,tutto chiaro luridissimi vermi?";
 
-  echo$testo;
-  echo"</br>";
-  echo"</br>";
-  var_dump($testo);
-  echo"</br>";
-  echo"</br>";
-  echo strlen($testo);
+
+    // echo $testo;
+    // echo "</br>";
+    // echo "</br>";
+    // var_dump($testo);
+    // echo "</br>";
+    // echo "</br>";
+    echo strlen($testo);
+    echo "</br>";
+    echo $_GET["badword"];
+    echo "</br>";
+    $badword = $_GET["badword"];
+    echo "</br>";
+    $testo_modificato = str_replace ( $badword, "***", $testo);
+    echo $testo_modificato;
+
 
 
   ?>
