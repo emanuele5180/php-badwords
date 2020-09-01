@@ -12,7 +12,9 @@
   echo"</br>";
   echo"</br>";
   var_dump($testo);
-
+  echo"</br>";
+  echo"</br>";
+  echo strlen($testo);
 
 
   ?>
